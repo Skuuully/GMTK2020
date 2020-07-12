@@ -1,0 +1,95 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "AttackCommand",
+"language": "GDScript",
+"path": "res://Scripts/AttackCommand.gd"
+}, {
+"base": "Node",
+"class": "BattleLogic",
+"language": "GDScript",
+"path": "res://Scripts/BattleLogic.gd"
+}, {
+"base": "Node",
+"class": "DefendCommand",
+"language": "GDScript",
+"path": "res://Scripts/DefendCommand.gd"
+}, {
+"base": "CanvasLayer",
+"class": "Dialog",
+"language": "GDScript",
+"path": "res://Scripts/Dialog.gd"
+}, {
+"base": "Node",
+"class": "DoubleAttackCommand",
+"language": "GDScript",
+"path": "res://Scripts/DoubleAttackCommand.gd"
+}, {
+"base": "Control",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://Scripts/Enemy.gd"
+}, {
+"base": "Control",
+"class": "Player",
+"language": "GDScript",
+"path": "res://Scripts/PlayerUI.gd"
+}, {
+"base": "Label",
+"class": "RiseAndFadeLabel",
+"language": "GDScript",
+"path": "res://Scripts/RiseAndFadeLabel.gd"
+}, {
+"base": "Node2D",
+"class": "Selector",
+"language": "GDScript",
+"path": "res://Scripts/InputController.gd"
+}, {
+"base": "Control",
+"class": "Shield",
+"language": "GDScript",
+"path": "res://Scripts/ShieldDisplay.gd"
+}, {
+"base": "Node",
+"class": "StealCommand",
+"language": "GDScript",
+"path": "res://Scripts/StealCommand.gd"
+} ]
+_global_script_class_icons={
+"AttackCommand": "",
+"BattleLogic": "",
+"DefendCommand": "",
+"Dialog": "",
+"DoubleAttackCommand": "",
+"Enemy": "",
+"Player": "",
+"RiseAndFadeLabel": "",
+"Selector": "",
+"Shield": "",
+"StealCommand": ""
+}
+
+[application]
+
+config/name="GMTKOutOfControl"
+run/main_scene="res://Scenes/World.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+PlayerGlobals="*res://Scripts/PlayerGlobals.gd"
+Globals="*res://Scripts/Globals.gd"
+Story="*res://Scripts/Story.gd"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

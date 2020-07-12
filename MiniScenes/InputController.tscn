@@ -1,0 +1,122 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/Arrow.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Empty.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/InputController.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/BarDisplay.gd" type="Script" id=4]
+
+[node name="InputController" type="Node2D"]
+position = Vector2( 1.15439, -1.47319 )
+script = ExtResource( 3 )
+
+[node name="UpArrow" type="TextureButton" parent="."]
+margin_left = -36.6234
+margin_top = -65.9603
+margin_right = 27.3766
+margin_bottom = -1.96034
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="DownArrow" type="TextureButton" parent="."]
+margin_left = 28.4796
+margin_top = 74.9086
+margin_right = 92.4796
+margin_bottom = 138.909
+rect_rotation = -179.655
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Display" type="RichTextLabel" parent="."]
+margin_left = -10.1524
+margin_top = -2.19972
+margin_right = 29.8476
+margin_bottom = 37.8003
+text = "X"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="SelectedDisplay" type="Control" parent="."]
+margin_left = -84.1457
+margin_top = -40.3051
+margin_right = -44.1457
+margin_bottom = -0.305084
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="SelectedDisplay"]
+margin_left = -13.1807
+margin_top = 50.2477
+margin_right = 50.8193
+margin_bottom = 114.248
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="SelectedDisplay"]
+margin_left = -13.4148
+margin_top = 31.3121
+margin_right = 50.5852
+margin_bottom = 95.3121
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect3" type="TextureRect" parent="SelectedDisplay"]
+margin_left = -14.2911
+margin_top = 11.6242
+margin_right = 49.7089
+margin_bottom = 75.6242
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="SelectedDisplay"]
+margin_left = -13.6611
+margin_top = -6.75851
+margin_right = 50.3389
+margin_bottom = 57.2415
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect5" type="TextureRect" parent="SelectedDisplay"]
+margin_left = -14.2557
+margin_top = -25.9345
+margin_right = 49.7443
+margin_bottom = 38.0655
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TitleText" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -87.0
+margin_right = 106.0
+margin_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Title"
+__meta__ = {
+"_edit_use_anchors_": false
+}

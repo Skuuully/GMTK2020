@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Shield.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ShieldDisplay.gd" type="Script" id=2]
+
+[node name="Shield" type="Control"]
+margin_left = 86.0
+margin_top = 17.0
+margin_right = 126.0
+margin_bottom = 57.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShieldTexture" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ShieldNum" type="Label" parent="."]
+margin_left = 22.0
+margin_top = 57.0
+margin_right = 62.0
+margin_bottom = 71.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
